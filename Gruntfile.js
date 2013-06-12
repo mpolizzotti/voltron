@@ -168,7 +168,7 @@ module.exports = function (grunt) {
 		// Executes jasmine tests with phantomjs.
 		exec: {
 			jasmine: {
-				command: 'phantomjs public/js/lib/jasmine/jasmine-runner.js http://' + nconf.get('GRUNT_HOST') + ':' + nconf.get('GRUNT_PORT') + '/js/test/',
+				command: 'phantomjs public/js/lib/jasmine/jasmine-runner.js http://' + nconf.get('HOST') + ':' + nconf.get('PORT') + '/js/test/',
 				stdout: true
 			}
 		}
